@@ -43,6 +43,8 @@ if __name__ == '__main__':
     smb = Smb('CORP\\'+username, password, server, folder_name)
     # or
     # smb = Smb(username, password, server, remote_name, domain="CORP")
+
+    # --------- Connect -----------
     smb.connect()
 
     file_obj = tempfile.NamedTemporaryFile()
